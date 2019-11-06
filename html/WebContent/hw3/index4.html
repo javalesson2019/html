@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+<meta charset="UTF-8">
+<title>Footer</title>
+<style>
+       
+        body {
+            color: #f5f5f5;
+        }
+        footer {
+            background-color: #264e6e;
+            margin: 20px;
+        }
+        hr {
+            width: 90%;
+            margin: 1% 5%;
+        }
+        ul {
+            list-style-type: none;
+            line-height: 1.5;
+        }
+        .first, .second {
+            width: 10%;
+            height: 30%;
+            margin: 55px 10px 10px 10%;
+            float: left;
+        }
+        .second {
+            margin-left: 25%;
+        }
+        .pageEnd {
+            text-align: center;
+            margin: 20px 0 20px 0;
+            padding: 1% 0 5% 0;
+            font-style:italic;
+        }
+        .third {
+            float: right;
+            margin: 75px 170px 40px 5px;
+            text-align: center;
+        }
+        li.fb, li.ig, li.yt {
+            display: inline-block;
+            background-image: url("img/fb_gray.png");
+            background-size: cover;
+            width: 40px;
+            height: 40px;
+            margin: 10px;
+            transition: all 1s ease;
+        }
+        li.yt {
+            background-image: url("img/youtube_gray.png");
+        }
+        li.ig {
+            background-image: url("img/insta_gray.png");
+        }
+        li.fb:hover {
+            background-image: url("img/fb.png");
+            
+        }
+        li.ig:hover {
+            background-image: url("img/insta.png");
+        }
+        li.yt:hover {
+            background-image: url("img/youtube.png");
+        }
+        li:hover {
+            text-decoration: underline;
+        }
+    </style>
+
+</head>
+<body>
+<footer>
+    <ul class="first">
+        <li>Home</li>
+        <li>About</li>
+        <li>Gallery</li>
+        <li>News</li>
+    </ul>
+    <ul class="second">
+        <li>Blog</li>
+        <li>FAQ</li>
+        <li>Contacts</li>
+        <li>Privacy & cookies</li>
+    </ul>
+    <ul class="third" >
+        <li style="display:inline-block;" class ="fb"> </li>
+        <li style="display:inline-block;" class ="ig"> </li>
+        <li style="display:inline-block;" class ="yt"> </li>  
+    </ul>
+    
+    <hr/>
+    <div class="pageEnd">Copyright &copy; Company 2018 - 2019</div>
+</footer>
+</body>
+</html>
