@@ -21,9 +21,6 @@ import java.sql.Statement;
  */
 @WebServlet("/HomeServlet")
 public class HomeServlet extends HttpServlet implements Servlet {
-	private static final long serialVersionUID = 1L;
-	public static final String LOGIN = "admin";
-	public static final String PASSWORD = "123";
 	public int k=0;
 
 	public String[]login = new String[100];
