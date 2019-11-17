@@ -168,5 +168,5 @@ function task10(min, max){
 	        break;
 	    }
 	  }while (ans !== "==");
-	  alert("game over");
+	  alert("thanks for the game:)");
 }
