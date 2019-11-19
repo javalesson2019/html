@@ -153,19 +153,14 @@ function task10(min, max){
 	max++;
 	let ans;
 	let guess;
-	let answers = ['>', '<', '=='];
 	  do {
-	    guess= Math.floor(min+(max-min)/2);
+	    guess= Math.floor(min+((max-min)/2));
 	    ans = prompt(`Your number is ${guess}? enter >, < or ==`);
-	    switch (ans) {
-	      case '>': {
-	        min = +min + +(max - min) / 2;
-	      }
-	        break;
-	      case '<': {
-	        max = max -(max - min) / 2;
-	      }
-	        break;
+	    if(ans===">"){
+	    	min = +min + +(max - min) / 2;
+	    }
+	    if(ans==="<"){
+	    	 max = +max -(max - min) / 2;
 	    }
 	  }while (ans !== "==");
 	  alert("thanks for the game:)");
