@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+<meta charset="UTF-8">
+<title>Task3</title>
+<style>
+body {
+	font-family: sans-serif;
+}
+
+.check {
+    margin: 25px 0 0 25px;
+}
+
+img {
+    width: 24px;
+}
+
+input, select {
+    padding: 5px;
+    margin: 5px 0;
+    border: 0;
+    border-bottom: 1px solid grey;
+}
+
+hr {
+    margin: 35px -10px;
+}
+
+#submit {
+    color: #f5f5f5;
+    width: 150px;
+    padding: 8px 48px;
+    background: #1b9899;
+    border: none;
+    margin-top: 15px;
+    margin-left: 80%;
+}
+
+
+@media screen and (min-width: 900px) {
+
+    .registration {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .reg, .personal {
+        width: 50%;
+    }
+
+    #name, #surname, #gender, #date {
+        width: 47%;
+    }
+
+    #gender, #date {
+        width: 48%;
+    }
+
+    #userName, #email {
+        width: 90%;
+    }
+
+    #userPassword, #confirmPassword {
+        width: 43%;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 900px) {
+    .registration {
+        flex-wrap: wrap;
+    }
+
+    .reg, .personal {
+        width: 100%;
+    }
+
+    #gender, #date, #name, #surname {
+        width: 46%;
+    }
+
+    #userName, #email {
+        width: 90%;
+    }
+
+    #userPassword, #confirmPassword {
+        width: 44%;
+    }
+
+    #submit {
+        margin-left: 70%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .reg, .personal, #gender, #date, #name, #surname, #confirmPassword {
+        width: 98%;
+    }
+
+    #userName, #email, #userPassword {
+        width: 90%;
+    }
+
+    #confirmPassword {
+        width: 90%;
+        margin-left: 5.5%;
+    }
+
+    #gender {
+        width: 100%;
+    }
+
+    #submit {
+        margin-left: 60%;
+    }
+}
+
+</style>
+</head>
+<body>
+    <form>
+        <div class="registration">
+            <div class="reg">
+                <h4>Registration form</h4>
+                <div>
+                    <label>
+                        <img src="img/username.png" alt="username">
+                        <input type="text" id="userName" name="userName" required placeholder="Username">
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        <img src="img/email.png" alt="email">
+                        <input type="email" id="email" name="email" required placeholder="Email address">
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        <img src="img/pswd.png" alt="password">
+                        <input type="password" id="userPassword" name="userPassword" required placeholder="Password">
+                    </label>
+                    <label>
+                        <input type="password" id="confirmPassword" name="confirmPassword" required
+                               placeholder="Confirm password">
+                    </label>
+                </div>
+            </div>
+            <div class="personal">
+                <h4>Personal details</h4>
+                <label>
+                    <input type="text" id="name" required placeholder="First name" name="name">
+                </label>
+                <label>
+                    <input type="text" id="surname" required placeholder="Last name" name="surname">
+                </label><br>
+                <label><select name="gender" id="gender">
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
+                </label>
+                <label>
+                    <input id="date" name="date" placeholder="mm/dd/yyyy">
+                </label>
+            </div>
+        </div>
+
+        <div class="check">
+            <input type="checkbox" id="receive" name="receive">
+            <label for="receive">I want to receive news and special offers</label><br>
+            <input type="checkbox" id="agree" name="agree">
+            <label for="agree">I agree with Terms and Conditions</label>
+        </div>
+        <hr>
+        <div class="submit">
+            <button type="submit" id="submit">SUBMIT</button>
+        </div>
+    </form>
+</body>
+</html>

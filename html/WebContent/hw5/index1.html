@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Task1</title>
+<style>
+body {
+	background: #f5f5f5;
+	font-family: sans-serif;
+}
+form {
+	position: relative;
+	margin: 0 30px 20px 50px;
+	padding: 100px 0 0 50px;
+	height: 280px;
+	width: 500px;
+	border-radius: 10px;
+	background: #a0cece;
+	z-index: 1;
+	top: -50px;
+	overflow: hidden;
+}
+
+img {
+	position: relative;
+	height: 200px;
+	z-index: 3;
+	bottom: 250px;
+	left: 400px;
+	object-position: 40px 30px;
+	top: -270px;
+	border-radius: 10px;
+}
+label {
+	font-size: small;
+}
+
+p {
+	position: relative;
+	z-index: 2;
+	line-height: 45px;
+	padding-left: 40px;
+	font-weight: bold;
+	color: #f1efee;
+	height: 45px;
+	width: 400px;
+	background: #dc641e;
+	top: 45px;
+	left: 30px;
+}
+
+.input {
+	width: 60%;
+}
+
+input {
+	background: #aad3d3;
+	padding: 7px;
+	margin: 5px 0;
+	border: 0;
+	border-bottom: solid grey;
+}
+
+#month, #year, #cvv {
+	width: 70px;
+}
+
+.exdate {
+	width: 59%;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+
+.block {
+	margin: 15px 0;
+}
+</style>
+</head>
+<body>
+	<p>CREDIT CARD DETAILS</p>
+	<form>
+		<div class="container">
+			<div class="block">
+				<label>Card Number<br> <input class="input"
+					type="number" required name="number card"
+					placeholder="1234 5678 9012 3456">
+				</label><br>
+			</div>
+			<div class="block">
+				<label>Name On Card<br> <input class="input"
+					type="text" required name="name on card" placeholder="Name Surname">
+				</label><br>
+			</div>
+			<div class="block">
+				<div class="exdate">
+					<div>
+						<label>Expiry Date <br> <input id="month"
+							type="number" min="1" max="12" name="month" placeholder="02"
+							required>
+						</label>
+					</div>
+					<div>
+						<input type="number" id="year" min="1998" max="2023" name="year"
+							placeholder="2017" required> <label for="year"></label>
+					</div>
+					<div>
+						<label>CVV/CVN <br> <input id="cvv" type="password"
+							maxlength="3" minlength="3" required placeholder="***">
+						</label>
+					</div>
+				</div>
+			</div>
+		</div>
+	</form>
+	<div class="img">
+		<img src="img/moon_flag.png" alt="moon flag">
+	</div>
+</body>
+</html>

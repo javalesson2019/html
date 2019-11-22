@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+<meta charset="UTF-8">
+<title>Task 2</title>
+<style>
+body{
+	background: #f5f5f5;
+	font-family: sans-serif;
+}
+h4{
+	margin-bottom: 5px;
+}
+div{
+	margin: 15px 0;
+}
+
+.field, .valid, .invalid {
+    height: 30px;
+    padding-left: 15px;
+    border: 1px solid;
+    border-radius: 5px;
+    width: 200px;
+}
+.field {
+    color: grey;
+}
+.invalid {
+    color: #e54566;
+    background: url("img/invalid.png") no-repeat 190px;
+    background-size: 15px;
+}
+.valid {
+    color: #41b049;
+    background: url("img/valid.png") no-repeat 190px;
+    background-size: 15px;
+}
+
+.checkbox {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    margin: 10px 0 0 20px;
+}
+
+.checkbox + label {
+    position: relative;
+    padding: 0 0 0 60px;
+    cursor: pointer;
+}
+
+.checkbox + label:before {
+    content: '';
+    position: absolute;
+    top: -4px;
+    left: 0;
+    width: 50px;
+    height: 20px;
+    border-radius: 5px;
+    border: 1px solid green;
+    transition: 400ms;
+}
+
+.checkbox + label:after {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: 2px;
+    width: 22px;
+    height: 18px;
+    border-radius: 3px;
+    background: #41b049;
+    transition: .2s;
+}
+
+.checkbox:checked + label:before {
+    border-color: #e54566;
+}
+
+.checkbox:checked + label:after {
+    background: #e54566;
+}
+
+.checkbox:checked + label:after {
+    left: 26px;
+}
+.radioChecked, .radioUnchecked {
+    background-color: #41b049;
+}
+input[type="radio"] {
+    display: none;
+}
+
+input[type="radio"] + label span {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin: 0 5px 0 15px;
+    background: white;
+    border-radius: 50%;
+    border: 1px solid green;
+    cursor: pointer;
+}
+
+input[type="radio"]:checked + label span {
+    background: green;
+    width: 10px;
+    height: 10px;
+    border: 5px double white;
+    margin-bottom: -3px;
+}
+
+input[type="button"] {
+    color: white;
+    height: 30px;
+    width: 75px;
+    border-radius: 5px;
+    margin-right: 10px;
+    border: none;
+}
+
+input[type="button"]:hover {
+    cursor: pointer;
+    transform: scale(1.4);
+}
+
+.active {
+    background: #3faf47;
+}
+
+.hovergreen {
+    background: #28772e;
+}
+
+.danger {
+    background: #e53e61;
+}
+
+.hoverred {
+    background: #98253d;
+}
+
+.dis {
+    background: #818181;
+}
+
+input[type="button"].circle {
+    color: white;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: none;
+}
+
+input[type="button"].circle:hover {
+    transform: scale(1.4);
+}
+
+input[type="button"].bplus {
+    background: #52ca83;
+}
+
+input[type="button"].bminus {
+    background: #ca2470;
+}
+
+textarea{
+	width: 500px;
+    height: 100px;
+}
+
+</style>
+</head>
+<body>
+	<form>
+	<div><h4>Inputs</h4>
+	<input class="field" type="text" id="input" placeholder="Enter some text">
+    <input class="valid" type="text" id="validInput" value="valid text">
+    <input class="invalid" type="text" id="invalidInput" value="invalid text">  
+	</div>
+	<div><h4>Check boxes</h4>
+	<input class="checkbox" type="checkbox" name="subscribe" id="cb1">
+    <label for="cb1">Subscribe </label>
+    <input class="checkbox" type="checkbox" checked name="nosubscribe" id="cb2">
+    <label for="cb2">Subscribe </label>
+	</div>
+	<div><h4>Gender</h4>
+	<input class="radioChecked" type="radio" checked name="radio" id="on">
+    <label for="on"><span></span>Male</label>
+    <input class="radioUnchecked" type="radio" name="radio" id="off">
+    <label for="off"><span></span>Female</label>
+	</div>
+	<div><h4>Buttons</h4>
+	<input class="active" type="button" value="Active">
+    <input class="hovergreen" type="button" value="Hover">
+    <input class="danger" type="button" value="Danger">
+    <input class="hoverred" type="button" value="Hover">
+    <input class="dis" type="button" value="Disabled">
+    <input class="circle bplus" type="button" value=&plus;>
+    <input class="circle bminus" type="button" value=&minus;>
+	</div>
+	<div><h4>Text area</h4>
+	<textarea name="textarea" placeholder="&emsp;&emsp;&emsp;Enter some text..." id="textarea"></textarea>
+	</div>
+	</form>
+</body>
+</html>
