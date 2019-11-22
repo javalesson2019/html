@@ -1,19 +1,39 @@
 <!DOCTYPE html>
-<html lang ="en">
+<html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<title>Card Game</title>
+    <meta charset="UTF-8">
+    <title>Card Game</title>
+    <style>
+        * {
+            font-family: sans-serif;
+        }
+    </style>
 </head>
+
 <body>
-<h1>Player 1:</h1>
-<p>  2 &clubs; 
-<span style="color:red">9 &hearts; 6 &hearts;  A &diams;</span>
- Q &spades; J &clubs; </p>
-<h1>Player 2:</h1>
-<p> <span style="color:red"> 3 &hearts; </span>
-A &clubs; 10 &clubs; 
-<span style="color:red">K &diams; </span>
-8 &spades; 
-<span style="color:red">3 &hearts; </span></p>
+
+    <p>Player 1:</p>
+    <div>
+        <!-- Не видно карт. Привожу пример -->
+        <p style="background: lightgray; float: left; font-size: 30px; padding: 10px; margin: 5px;">2 ♣</p>
+        <p style="background: lightgray; float: left; color:darkred; font-size: 30px; padding: 10px; margin: 5px;">9 ♥
+        </p>
+        <p style="background: lightgray; float: left; color: darkred; font-size: 30px; padding: 10px; margin: 5px;">6 ♥
+        </p>
+        <p style="background: lightgray; float: left; color: darkred; font-size: 30px; padding: 10px; margin: 5px;">A ♦
+        </p>
+        <p style="background: lightgray; float: left; font-size: 30px; padding: 10px; margin: 5px;">Q ♠</p>
+        <p style="background: lightgray; float: left; clear: right; font-size: 30px; padding: 10px; margin: 5px;">J ♣
+        </p>
+    </div>
+    <br style="clear: both;" />
+    <h3>Player 2:</h3>
+    <p> <span style="color:red"> 3 &hearts; </span>
+        A &clubs; 10 &clubs;
+        <span style="color:red">K &diams; </span>
+        8 &spades;
+        <span style="color:red">3 &hearts; </span></p>
 </body>
+
 </html>
