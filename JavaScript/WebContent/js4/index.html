@@ -4,57 +4,61 @@
 <meta charset="UTF-8">
 <title>hw</title>
 <style>
-	#outer{
-		width: 600px;
-		height: 600px;
-		margin: 20px auto;
-		position: relative;
-		border: 10px solid white;
-		box-shadow: 0px 0px 5px 2px #ccc;
-	}
-	
-	button{
-		padding: 20px;
-		border: none;
-		position: absolute;
-		top:45%;
-		cursor: pointer;
-	}
+#outer {
+	width: 600px;
+	height: 600px;
+	margin: 20px auto;
+	position: relative;
+	border: 10px solid white;
+	box-shadow: 0px 0px 5px 2px #ccc;
+}
 
-    #next{
-        	border-radius: 10px 0px 0px 10px;
-        	margin-left: 560px;
-    }
-    #prev{
-        	border-radius: 0px 10px 10px 0px;
-    }
-    #run_slideshow, #stop_slideshow {
-    	width: 120px;
-    	height: 40px;
-    	margin: 7px;
-    	border-radius: 7px;
-    	font-weight: bold;
-    	color: black;
-    	outline: none;
-    	display: flex;
-   		margin-top: 360px;
-   		height: 50px;
-	}
-	#stop_slideshow{
-		margin-left: 470px;
-	}
+button {
+	padding: 20px;
+	border: none;
+	position: absolute;
+	top: 45%;
+	cursor: pointer;
+}
+
+#next {
+	border-radius: 10px 0px 0px 10px;
+	margin-left: 560px;
+}
+
+#prev {
+	border-radius: 0px 10px 10px 0px;
+}
+
+#run_slideshow, #stop_slideshow {
+	width: 120px;
+	height: 40px;
+	margin: 7px;
+	border-radius: 7px;
+	font-weight: bold;
+	color: black;
+	outline: none;
+	display: flex;
+	margin-top: 360px;
+	height: 50px;
+}
+
+#stop_slideshow {
+	margin-left: 470px;
+}
 </style>
 </head>
 <body>
 	<div class="outer" id="outer">
 		<div class="inner" id="inner">
-			<img name = "slide" width="600" height="600" src="img/img0.jpg" alt="img">
+			<img name="slide" width="600" height="600" src="img/img0.jpg"
+				alt="img">
 		</div>
 		<button id="prev"></button>
 		<button id="next"></button>
 		<button id="run_slideshow">start</button>
 		<button id="stop_slideshow">stop</button>
 	</div>
-<script type="text/javascript" src="task.js"></script>
+	<script type="text/javascript" src="task.js"></script>
 </body>
 </html>
