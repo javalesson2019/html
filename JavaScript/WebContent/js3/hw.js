@@ -7,12 +7,13 @@ function isValidEmail(str) {
 }
 
 function trimString(str) {
-	str = str.replace(/\s\s+/g, ' ');
+    str = str.replace(/\s\s+/g, ' ');
     return str.replace(/^\s+|\s+$/g, '');
 }
 
-function thousandsSeparators(num){
-	return num.toLocaleString().replace(/,/, '.').replace(/\s/, ',');
+function thousandsSeparators(num) {
+    // здесь обязательно нужно указать локаль т.к. для локали en будет ошибка
+    return num.toLocaleString('ru').replace(/,/, '.').replace(/\s/, ',');
 }
 
 function formatCurrency(num) {
