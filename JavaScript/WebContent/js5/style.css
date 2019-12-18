@@ -28,14 +28,15 @@ ul li:hover {
 
 ul li.checked {
   background: #d8d9db;
-  color: #black;
+  color: black;
   text-decoration: line-through;
 }
 
 ul li.checked::before {
   content: '';
   position: absolute;
-  border-color: #white;
+  /* зачем нужно ставить знак #  перед именем цвета? Он ставится перед шестнадцатиричным значением !*/
+  border-color: white;
   border-style: solid;
   border-width: 0 2px 2px 0;
   top: 10px;
